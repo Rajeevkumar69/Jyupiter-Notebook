@@ -1,0 +1,53 @@
+.features {
+        padding: 15px 0;
+        font-family: 'Josefin Sans', sans-serif;
+
+
+        .features-cell-desc,
+        .features-command-desc,
+        .features-keyboard-desc,
+        .features-markdown-desc,
+        .features-editing-desc {
+                margin-left: 25%;
+
+                p {
+                        font-size: 20px;
+
+                        code {
+                                background-color: rgba(192, 189, 189, 0.2);
+                                width: fit-content;
+                                height: 30px;
+                                padding: 2px;
+                                border-radius: 5px;
+                        }
+
+                        span {
+                                display: none;
+                        }
+                }
+
+                &:hover {
+                        p span {
+                                display: inline-block;
+                                cursor: pointer;
+                        }
+                }
+        }
+
+
+
+        .features-desc {
+                h4 {
+                        text-align: center;
+                        border-bottom: 1px solid #ddd;
+                        padding-bottom: 10px;
+                        font-size: 20px;
+
+                }
+
+                p {
+                        text-align: center;
+                        font-size: 20px;
+                }
+        }
+}

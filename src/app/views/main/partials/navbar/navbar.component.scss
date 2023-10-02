@@ -1,0 +1,72 @@
+.con-nav {
+        .brand {
+                cursor: pointer;
+                text-decoration: none;
+                color: #0bd178;
+
+                &::after {
+                        content: '';
+                        display: block;
+                        width: 0;
+                        height: 2px;
+                        background: #38966C;
+                        transition: width .3s;
+                }
+
+                &:hover::after {
+                        width: 100%;
+                        transition: width .3s;
+                }
+        }
+
+        .row-nav {
+                .navBar {
+                        .link {
+                                float: right;
+                                margin-left: 140vh;
+                                font-weight: 400;
+                                border: 1px solid #fff;
+                                border-radius: 3px;
+                                width: 100px;
+                                height: 50px;
+                                cursor: pointer;
+                                outline: none;
+                                padding: 5px;
+                                display: block;
+                                background: linear-gradient(to right, #38966C 50%, white 50%);
+                                background-size: 200% 100%;
+                                background-position: right bottom;
+                                transition: all .5s ease-out;
+
+                                &:hover {
+                                        background-position: left bottom;
+                                        color: #fff;
+                                }
+                        }
+
+
+                        .link2 {
+                                color: red;
+                                margin-left: 20px;
+                                font-weight: 400;
+                                border: 1px solid #fff;
+                                outline: none;
+                                border-radius: 3px;
+                                width: 100px;
+                                height: 50px;
+                                cursor: pointer;
+                                padding: 5px;
+                                display: block;
+                                background: linear-gradient(to right, #38966C 50%, white 50%);
+                                background-size: 200% 100%;
+                                background-position: right bottom;
+                                transition: all .5s ease-out;
+
+                                &:hover {
+                                        background-position: left bottom;
+                                        color: #fff;
+                                }
+                        }
+                }
+        }
+}

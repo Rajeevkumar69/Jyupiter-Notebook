@@ -1,0 +1,41 @@
+.term-and-condition {
+        padding: 15px 0;
+        font-family: 'Josefin Sans', sans-serif;
+
+        .term-con-desc {
+                h4 {
+                        text-align: center;
+                        border-bottom: 1px solid #ddd;
+                        padding-bottom: 10px;
+                        font-size: 20px;
+                }
+
+                p {
+                        font-size: 20px;
+                        margin-bottom: 20px;
+                }
+        }
+
+        .term-con-title-desc {
+                font-family: 'Josefin Sans', sans-serif;
+
+                h4 {
+                        font-family: 'Courgette', cursive;
+                        padding: 10px;
+                        font-size: 20px;
+                        color: blueviolet;
+                }
+
+                h5 {
+                        font-style: italic;
+                        font-weight: 500;
+                        color: chocolate;
+                        padding: 10px;
+                }
+
+                p {
+                        font-size: 20px;
+                        margin-bottom: 30px;
+                }
+        }
+}
