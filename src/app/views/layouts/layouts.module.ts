@@ -5,6 +5,7 @@ import { LayoutsRoutingModule } from './layouts-routing.module';
 import { HomeComponent } from '../main/home/home.component';
 import { PartialsModule } from '../main/partials/partials.module';
 import { FeaturesComponent } from '../main/features/features.component';
+import { ClipboardModule } from '@angular/cdk/clipboard';
 
 // prettier-ignore
 @NgModule({
@@ -17,6 +18,7 @@ import { FeaturesComponent } from '../main/features/features.component';
           CommonModule,
           LayoutsRoutingModule,
           PartialsModule,
+          ClipboardModule
      ]
 })
 export class LayoutsModule {}

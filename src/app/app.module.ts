@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // prettier-ignore
 @NgModule({
@@ -17,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
           BrowserModule,
           AppRoutingModule,
           RouterModule,
-          HttpClientModule
+          HttpClientModule,
+          BrowserAnimationsModule,
      ],
   providers: [],
   bootstrap: [AppComponent],
