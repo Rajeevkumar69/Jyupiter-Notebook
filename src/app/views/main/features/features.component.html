@@ -9,7 +9,31 @@
 
                     <ng-container *ngFor="let element of keyShortCuts">
                          <div class="features-cell-desc">
-                              <h4>{{ element.category }}</h4>
+                              <ng-container *ngIf="element.category == 'Cell Operations'">
+                                   <h4>
+                                        {{ element.category }} &nbsp;&nbsp; <span><i class="fas fa-terminal"></i></span>
+                                   </h4>
+                              </ng-container>
+                              <ng-container *ngIf="element.category == 'Command Mode'">
+                                   <h4>
+                                        {{ element.category }} &nbsp;&nbsp; <span><i class="fab fa-css3"></i></span>
+                                   </h4>
+                              </ng-container>
+                              <ng-container *ngIf="element.category == 'Editing'">
+                                   <h4>
+                                        {{ element.category }} &nbsp;&nbsp; <span><i class="far fa-edit"></i></span>
+                                   </h4>
+                              </ng-container>
+                              <ng-container *ngIf="element.category == 'Markdown'">
+                                   <h4>
+                                        {{ element.category }} &nbsp;&nbsp; <span><i class="fab fa-markdown"></i></span>
+                                   </h4>
+                              </ng-container>
+                              <ng-container *ngIf="element.category == 'Keyboard shortcuts for specific features'">
+                                   <h4>
+                                        {{ element.category }} &nbsp;&nbsp; <span><i class="fas fa-magic"></i></span>
+                                   </h4>
+                              </ng-container>
                               <ng-container *ngFor="let innerElement of element.shortCuts">
                                    <p>
                                         <span><i [cdkCopyToClipboard]="innerElement['shortCut']" class="far fa-clipboard"></i></span><code> {{ innerElement['label'] }} :&nbsp; </code>
